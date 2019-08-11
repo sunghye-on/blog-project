@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block contents %}
+<body>
+    <br>
+<div class = "container">
+<h1>자세한 본문 내용입니다</h1><br><br>
+    <div class="card">
+        <div class="card-body">
+            <h1>{{det.title}}</h1>
+            <p>{{det.date}}</p>
+            <p>{{det.body}}</p>
+            <a href = "{%url 'home' %}">돌아가기</a>
+         </div>
+    </div>
+    </div>
+    
+<br>
+    
+</body>
+{% endblock %}
